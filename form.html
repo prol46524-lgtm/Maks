@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Go — Бронювання</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Aroma Coffee</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="form.html" class="active">Бронювання</a></li>
+        </ul>
+    </nav>
+
+    <section id="booking">
+        <h2 class="section-title">Бронювання</h2>
+        <div class="booking-wrap">
+          <div class="booking-bg"></div>
+            <div class="booking-form-box">
+                <h2>Забронювати столик</h2>
+                <div class="form-group" style="margin-bottom:14px">
+        <label>Ваше ім'я</label>
+        <input type="text" placeholder="Введіть ім'я">
+      </div>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label>Дата</label>
+          <input type="date">
+        </div>
+
+        <div class="form-group">
+          <label>Час</label>
+          <input type="time"  value="12:00">
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:14px">
+        <label>Кількість гостей</label>
+        <div class="counter">
+          <input type="number" value="2" min="1" max="10">
+        </div>
+      </div>
+
+      <div class="form-check">
+        <input type="checkbox" id="agreeCheck">
+        <label for="agreeCheck">Я згоден з правилами ресторану та умовами бронювання</label>
+      </div>
+
+      <button class="btn btn-full">Забронювати столик</button>
+      <p class="success-msg">✅ Ваш столик заброньовано! Чекаємо вас!</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2026 Aroma Coffee. Всі права захищені.
+    </footer>
+</body>
+</html>
